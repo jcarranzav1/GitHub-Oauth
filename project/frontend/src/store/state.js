@@ -1,12 +1,4 @@
-export const blankState = {
-	user: null,
-	isLogging: false,
+export const initialState = {
+  user: JSON.parse(localStorage.getItem('user')).user || null,
+  isLogging: JSON.parse(localStorage.getItem('user')).isLogging || false,
 };
-
-let initialState = blankState;
-const storedState = localStorage.getItem('user');
-
-if (storedState) {
-	initialState = JSON.parse(storedState);
-}
-export default initialState;

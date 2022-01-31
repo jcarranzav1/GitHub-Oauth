@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { BASE_URL } from './consts';
-//import { clearSession, getSession } from './session';
+// import { clearSession, getSession } from './session';
 
 const instance = axios.create({
-	baseURL: BASE_URL,
+  baseURL: BASE_URL,
 });
 
 /* instance.interceptors.request.use(
